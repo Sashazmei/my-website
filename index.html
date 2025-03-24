@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт мероприятий</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#events">Предстоящие события</a></li>
+                <li><a href="#past-events">Прошедшие события</a></li>
+                <li><a href="#contact">Обратная связь</a></li>
+                <li><a href="#location">Местонахождение</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Главная страница -->
+    <section class="hero">
+        <h1>Добро пожаловать на сайт мероприятий</h1>
+        <button class="btn-ticket">Купить билеты</button>
+    </section>
+
+    <!-- Предстоящие события -->
+    <section id="events" class="events">
+        <h2>Предстоящие события</h2>
+        <div class="event-item">
+            <h3>Название события</h3>
+            <p>Дата: 25 марта 2025</p>
+            <button class="btn-ticket">Купить билеты</button>
+        </div>
+    </section>
+
+    <!-- Прошедшие события -->
+    <section id="past-events" class="events">
+        <h2>Прошедшие события</h2>
+        <div class="event-item">
+            <h3>Название события</h3>
+            <p>Дата: 1 марта 2025</p>
+        </div>
+    </section>
+
+    <!-- Регистрация -->
+    <section id="registration">
+        <h2>Регистрация</h2>
+        <form>
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="email" placeholder="Ваш email" required>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </section>
+
+    <!-- Обратная связь -->
+    <section id="contact">
+        <h2>Обратная связь</h2>
+        <form>
+            <input type="email" placeholder="Ваш email" required>
+            <textarea placeholder="Ваше сообщение" required></textarea>
+            <button type="submit">Отправить сообщение</button>
+        </form>
+    </section>
+
+    <!-- Местонахождение -->
+    <section id="location">
+        <h2>Наше местоположение</h2>
+        <p>Адрес: улица Примерная, 123, Москва</p>
+        <div id="map">Карта с местоположением</div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
